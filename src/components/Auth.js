@@ -6,8 +6,10 @@ export const Auth = () => {
   const { user, logout } = useContext(AuthContext);
   return user ? (
     <div>
-      <p>Bienvenido {user.name}</p>
-      <button onClick={() => logout()}>Log Out</button>
+      <p className="bienvenidoParragraph">Bienvenido {user.name} </p>
+      <button onClick={() => logout()} className="bienvenidoButton">
+        Log Out
+      </button>
       <ul className="navigator">
         <li>
           <Link to={"/"}>Home</Link>

@@ -29,9 +29,9 @@ export const NewPost = ({ addPost }) => {
   };
   return (
     <>
-      <h1>Add new Post</h1>
+      <h1 className="newpostitle">Add new Post</h1>
       <form className="new-post" onSubmit={handleForm}>
-        <fieldset>
+        <fieldset className="title">
           <label htmlFor="title">Title</label>
           <input type="text" name="title" id="title" required />
         </fieldset>
@@ -73,10 +73,18 @@ export const NewPost = ({ addPost }) => {
         </fieldset>
         <fieldset className="text">
           <label htmlFor="text">Text</label>
-          <input type="text" name="text" id="text" required />
+          <textarea
+            className="text1"
+            type="text"
+            name="text"
+            id="text"
+            required
+          />
         </fieldset>
-        <fieldset fieldset className="photo">
-          <label htmlFor="photo">Image</label>
+        <fieldset className="photo">
+          <label htmlFor="photo" className="photo1">
+            IMAGE
+          </label>
           <input
             type="file"
             name="photo"
