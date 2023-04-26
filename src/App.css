@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:first-letter{
+text-transform: uppercase;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #78bcc4;
+  color: #002c3e;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.navigator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.5rem;
+  background-color: #002c3e;
+  height: 2rem;
+  width: 100%;
+}
+
+.navigator * {
+  color: #f7f8f3;
+  text-decoration: none;
+}
+
+.userWelcome{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 1rem;
+  width: 20rem;
+  gap: 1rem;
+  top: 3rem;
+}
+.homepageH1{
+    margin-top: 2.5rem;
+    margin-left: 5rem;
+    margin-bottom: 2.5rem;
+}
+
+.homepageparragraf{
+    margin-left: 6rem;
+
+}
+
+.postlist {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  list-style: none;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f7f8f3;
+  border: solid #f7444e;
+  height: 100%;
+  margin: 2rem;
+  border-radius: 10%;
+  position: relative;
+}
+.post img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+}
+.postTitle {
+  font-size: 2rem;
+  margin: 1rem;
+  color: black;
+  text-decoration: underline #f7f8f3; 
+}
+
+/* login CSS */
+
+.logintitle {
+    color: white;
+    text-align: center;
+  }
+  
+.pagelogin {
+    background-image: url(https://www.solofondos.com/wp-content/uploads/2020/11/Cua%CC%81l-es-el-lema-de-la-ciudad-de-Santa-Cruz-de-Tenerife-copia.jpg);
+    width: 30rem;
+    height: 10rem;
+    margin: auto;
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: bold;
+}
+
+.email {
+    text-align: center;
+    margin: auto;
+    width: 10rem;
+    border-style: none;
+    padding: 1rem;
+    color: white;
+  }
+
+.password {
+    text-align: center;
+    margin: auto;
+    width: 10rem;
+    border-style: none;
+    width: fit-content;
+    color: white;
+  }
+
+.login {
+  width: auto;
+  margin-left: 6rem;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.form{
+  background-color: rgba(128, 128, 128, 0.431);
+  display: flex;
+  flex-direction: column;
+}
+
+/*Banda de resuelto*/
+
+.buttonsDiv{
+  display: flex;
+  flex-direction: row;
+}
+.resueltoButton{
+  width: 50%;
+}
+.deleteButton{
+  width: 50%;
+}
+.resuelto {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: rotate(-30deg) translate(-50%, -50%);
+  transform-origin: top left;
+  background-color: green;
+  color: white;
+  border: 2px solid white;
+  font-size: large;
+}
+
+.pendiente {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  transform: rotate(-30deg) translate(-50%, -50%);
+  transform-origin: top left;
+  background-color: red;
+  color: white;
+  border: 2px solid white;
+  font-size: large;
+}
+button {
+  background-color: #f7444e;
+  color: white;
+  font-size: large;
+}
+
+/* New Post*/
+
+.titleNP {
+  text-align: center;
+  padding-top: 2rem;
+}
+.new-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newpostitle {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.barrio {
+  text-align: center;
+  margin: auto;
+  width: 10rem;
+  border-style: none;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin: auto;
+  width: 10rem;
+  border-style: none;
+  padding: 1rem;
+}
+
+.text {
+  text-align: center;
+  margin: auto;
+  width: 10rem;
+  border-style: none;
+  padding: 1rem;
+}
+
+.photo {
+  text-align: center;
+  margin: auto;
+  width: 10rem;
+  border-style: none;
+  padding: 1rem;
+}
+
+.text1 {
+  width: 500px;
+  height: 100px;
+}
+
+#barrio {
+  background-color: rgb(225, 220, 220);
+}
+
+#title {
+  background-color: rgb(225, 220, 220);
+}
+
+#text {
+  background-color: rgb(225, 220, 220);
+  border: solid 1px black;
+}
+
+#photo {
+  display: none;
+}
+
+.photo1 {
+  display: block;
+  padding: 8px 21px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #0f4a61;
+  color: whitesmoke;
+}
+
