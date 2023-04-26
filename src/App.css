@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-*:first-letter{
-text-transform: uppercase;
+*:first-letter {
+  text-transform: uppercase;
 }
 .App {
   display: flex;
@@ -48,7 +48,7 @@ footer {
   text-decoration: none;
 }
 
-.userWelcome{
+.userWelcome {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -58,15 +58,14 @@ footer {
   gap: 1rem;
   top: 3rem;
 }
-.homepageH1{
-    margin-top: 2.5rem;
-    margin-left: 5rem;
-    margin-bottom: 2.5rem;
+.homepageH1 {
+  margin-top: 2.5rem;
+  margin-left: 5rem;
+  margin-bottom: 2.5rem;
 }
 
-.homepageparragraf{
-    margin-left: 6rem;
-
+.homepageparragraf {
+  margin-left: 6rem;
 }
 
 .postlist {
@@ -99,43 +98,44 @@ footer {
   font-size: 2rem;
   margin: 1rem;
   color: black;
-  text-decoration: underline #f7f8f3; 
+  text-decoration: underline #f7f8f3;
 }
 
 /* login CSS */
-
 .logintitle {
-    color: white;
-    text-align: center;
-  }
-  
+  color: transparent;
+  display: block;
+  margin: auto;
+  margin-top: 4rem;
+}
+
 .pagelogin {
-    background-image: url(https://www.solofondos.com/wp-content/uploads/2020/11/Cua%CC%81l-es-el-lema-de-la-ciudad-de-Santa-Cruz-de-Tenerife-copia.jpg);
-    width: 30rem;
-    height: 10rem;
-    margin: auto;
-    margin-top: 1rem;
-    font-size: large;
-    font-weight: bold;
+  /*   background-image: url(https://www.solofondos.com/wp-content/uploads/2020/11/Cua%CC%81l-es-el-lema-de-la-ciudad-de-Santa-Cruz-de-Tenerife-copia.jpg);
+ */
+  background-color: #3d7f86de;
+  width: 20rem;
+  height: 10rem;
+  display: block;
+  margin: auto;
+  border-radius: 12px;
 }
 
 .email {
-    text-align: center;
-    margin: auto;
-    width: 10rem;
-    border-style: none;
-    padding: 1rem;
-    color: white;
-  }
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 10rem;
+  border-style: none;
+}
 
 .password {
-    text-align: center;
-    margin: auto;
-    width: 10rem;
-    border-style: none;
-    width: fit-content;
-    color: white;
-  }
+  width: fit-content;
+  color: white;
+  text-align: center;
+  margin: auto;
+  width: 10rem;
+  border-style: none;
+}
 
 .login {
   width: auto;
@@ -145,22 +145,23 @@ footer {
   margin-top: 10px;
 }
 
-.form{
-  background-color: rgba(128, 128, 128, 0.431);
-  display: flex;
-  flex-direction: column;
+#email {
+  background-color: #78bcc4;
+}
+#pass {
+  background-color: #78bcc4;
 }
 
 /*Banda de resuelto*/
 
-.buttonsDiv{
+.buttonsDiv {
   display: flex;
   flex-direction: row;
 }
-.resueltoButton{
+.resueltoButton {
   width: 50%;
 }
-.deleteButton{
+.deleteButton {
   width: 50%;
 }
 .resuelto {
@@ -271,4 +272,3 @@ button {
   background-color: #0f4a61;
   color: whitesmoke;
 }
-
